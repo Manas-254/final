@@ -33,7 +33,7 @@
 
 <script>
 export default {
-  name: "Cart",
+  name: "cart",
   data() {
     return {
       cart: [],

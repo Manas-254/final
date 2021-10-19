@@ -4,6 +4,7 @@
     <h1>
       <span> Item {{ individualDetails.id }}</span>
     </h1>
+    <button @click="cart1">Cart</button>
     <div class="card">
       <img :src="individualDetails.image" alt="images" />
       <div class="content">
@@ -59,6 +60,9 @@ export default {
     console.log("id||", id1);
   },
   methods: {
+    cart1(){
+      this.$router.push({name:'cart'})
+    },
     isInCart(itemId) {
       if (!localStorage.getItem("cart")) {
         localStorage.setItem("cart", JSON.stringify([]));
