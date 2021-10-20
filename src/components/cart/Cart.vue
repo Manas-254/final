@@ -24,8 +24,9 @@
     {{totalPrice()}}
     <div class="nav__cart">
       <span class="total-quantity">Total order Quantity:{{ totalQuantity }}</span>
-      
+      <br>
        <span> Total: {{finalPrice}} &#36;</span>
+       <br>
        <button @click="submit">Checkout</button>
     </div>
   </div>
@@ -47,7 +48,7 @@ export default {
       );
     },
     finalPrice() {
-      return this.cart.reduce((total, product) => total + product.total, 0);
+      return this.cart.reduce((total, product) => total + product.quantity*product.price, 0);
     },
   },
   methods: {
@@ -120,7 +121,7 @@ img {
   font-weight: bold;
   background-color: rgb(85, 206, 15);
   border-style: none;
-  color: white;
+  color: lightgoldenrodyellow;
   border-radius: 5px;
 }
 .main{

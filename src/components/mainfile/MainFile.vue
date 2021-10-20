@@ -1,5 +1,5 @@
 <template>
-<h2>Shopping Cart</h2>
+<h2>Online Shopping Cart</h2>
   <div class="container-main">
     <div class="box" v-for="(user, index) in apiData" :key="index">
       <img :src="user.image" @click="getDetails(user),scrollToTop()" :userdetails="user" />
@@ -59,7 +59,7 @@ export default {
     width: auto;
     height: auto;
     border: ridge;
-    background-color: white;
+    background-color: lightgoldenrodyellow;
 }
 img {
   border: 5px solid  rgb(34 127 119);
@@ -70,10 +70,10 @@ img {
 h2{
   align-content: initial;
       font-size: 40px;
-    color: darkslategrey;
+    color: #2c3e50;
 }
 .info{
-  color: blue;
+  color:#2c3e50;
     font-size: larger;
 }
 </style>

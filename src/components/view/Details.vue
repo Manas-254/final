@@ -38,6 +38,7 @@
   </div>
 </template>
 
+
 <script>
 export default {
   name: "details",
@@ -87,7 +88,7 @@ export default {
         "image": itemimage,
         "total":0, 
         "price": itemprice, 
-        "quantity":0,
+        "quantity":1,
       });
       localStorage.setItem("cart", JSON.stringify(cartItems));
       this.cart = JSON.parse(localStorage.getItem("cart"));
@@ -110,7 +111,7 @@ export default {
   margin: 0 auto;
 }
 h1 {
-  color: black;
+  color: #2c3e50;
   margin: 10px;
 }
 span {
@@ -135,16 +136,16 @@ img {
 }
 .info {
   margin: 5px 0;
-  color: navy;
+  color: #2c3e50;
   font-stretch: semi-condensed;
   padding: 5px;
 }
 .backbtn {
   border: none;
-  background-color: black;
+  background-color:#2c3e50;
   padding: 10px;
   border-radius: 10px;
-  color: white;
+  color: lightgoldenrodyellow;
   cursor: pointer;
   margin: 20px 0;
   float: left;
@@ -156,7 +157,7 @@ img {
   font-size: 15px;
   font-weight: bold;
   background-color: rgb(85, 206, 15);
-  color: white;
+  color: lightgoldenrodyellow;
   border-radius: 20px;
 }
 .butt1 {

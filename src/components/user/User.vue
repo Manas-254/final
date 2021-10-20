@@ -115,9 +115,9 @@ label.form-control-label {
   cursor: pointer;
   font-size: 15px;
   font-weight: bold;
-  background-color: rgb(85, 206, 15);
+  background-color: green;
   border-style: none;
-  color: white;
+  color: black;
   border-radius: 5px;
 }
 </style>
